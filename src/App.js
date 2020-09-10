@@ -6,6 +6,7 @@ import Table from "./Table";
 import { Card, CardContent } from "@material-ui/core";
 import { MenuItem, FormControl, Select } from "@material-ui/core";
 import { sortData } from "./utils";
+import LineGraph from "./LineGraph";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -36,7 +37,7 @@ function App() {
         });
     };
     getCountriesData();
-  });
+  }, []);
 
   const onCountryChange = async (event) => {
     const countryCode = event.target.value;
@@ -95,7 +96,7 @@ function App() {
             <h3>Live cases by Country</h3>
             <Table countries={tableData}></Table>
             <h3>Worldwide new cases</h3>
-            {/* Graph */}
+            <LineGraph></LineGraph>
           </CardContent>
         </Card>
       </div>
