@@ -26,14 +26,6 @@ const App = () => {
   const [mapZoom, setMapZoom] = useState(2);
 
   useEffect(() => {
-    fetch("https://disease.sh/v3/covid-19/all")
-      .then((response) => response.json())
-      .then((data) => {
-        setCountryInfo(data);
-      });
-  }, []);
-
-  useEffect(() => {
     const getCountriesData = async () => {
       fetch("https://disease.sh/v3/covid-19/countries")
         .then((response) => response.json())
@@ -52,8 +44,6 @@ const App = () => {
     getCountriesData();
   }, []);
 
-  console.log(casesType);
-
   const onCountryChange = async (e) => {
     const countryCode = e.target.value;
     const url =
@@ -71,6 +61,14 @@ const App = () => {
         countryCode === "worldwide" ? setMapZoom(2) : setMapZoom(4);
       });
   };
+
+  useEffect(() => {
+    fetch("https://disease.sh/v3/covid-19/all")
+      .then((response) => response.json())
+      .then((data) => {
+        setCountryInfo(data);
+      });
+  }, []);
 
   return (
     <div className="app">
