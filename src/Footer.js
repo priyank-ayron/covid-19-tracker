@@ -61,8 +61,7 @@ function Footer() {
         <hr />
         <div className="row">
           <p className="col-sm">
-            &copy;{new Date().getFullYear()} All rights reserved | Terms Of
-            Service | Privacy
+            &copy;{new Date().getFullYear()} | All rights reserved
           </p>
         </div>
       </div>
