@@ -1,0 +1,23 @@
+.main-footer {
+  background-color: #f5f6fa;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+.contact_details {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f5f6fa;
+}
+.display_contact {
+  display: flex;
+}
+.each_detail {
+  padding: 2px;
+}
+@media (max-width: 700px) {
+  .contact_details {
+    flex-direction: column;
+  }
+}
