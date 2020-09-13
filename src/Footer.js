@@ -13,7 +13,7 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h3>Contact Priyank Agarwal at:</h3>
+            <h3 className="col-sm">Contact Priyank Agarwal at:</h3>
             <div className="contact_details">
               <p className="each_detail">
                 <a
@@ -21,6 +21,7 @@ function Footer() {
                   target="_blank"
                   className="display_contact"
                   rel="noopener noreferrer"
+                  title="Click to open LinkedIn"
                 >
                   <IconButton>
                     <LinkedInIcon></LinkedInIcon>
@@ -33,6 +34,7 @@ function Footer() {
                   target="_blank"
                   className="display_contact"
                   rel="noopener noreferrer"
+                  title="Click to open Github"
                 >
                   <IconButton>
                     <GitHubIcon></GitHubIcon>
@@ -45,6 +47,7 @@ function Footer() {
                   target="_blank"
                   className="display_contact"
                   rel="noopener noreferrer"
+                  title="Click to open facebook"
                 >
                   <IconButton>
                     <FacebookIcon></FacebookIcon>
@@ -57,6 +60,7 @@ function Footer() {
                   target="_blank"
                   className="display_contact"
                   rel="noopener noreferrer"
+                  title="+91-6386947948"
                 >
                   <IconButton>
                     <PhoneIcon></PhoneIcon>
@@ -69,6 +73,7 @@ function Footer() {
                   target="_blank"
                   className="display_contact"
                   rel="noopener noreferrer"
+                  title="priyank.ayron@gmail.com"
                 >
                   <IconButton>
                     <EmailIcon></EmailIcon>

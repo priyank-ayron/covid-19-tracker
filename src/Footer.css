@@ -3,7 +3,6 @@
   position: relative;
   bottom: 0;
   width: 100%;
-  padding: 20px;
 }
 .contact_details {
   display: flex;
@@ -17,5 +16,7 @@
   padding: 2px;
 }
 .col-sm {
+  display: grid;
+  place-items: center;
   font-size: 0.8em;
 }
