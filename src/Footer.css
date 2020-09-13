@@ -19,8 +19,3 @@
 .col-sm {
   font-size: 0.8em;
 }
-@media (max-width: 700px) {
-  .contact_details {
-    flex-direction: column;
-  }
-}

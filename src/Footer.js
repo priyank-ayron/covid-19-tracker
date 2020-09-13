@@ -5,6 +5,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
+import { IconButton } from "@material-ui/core";
 
 function Footer() {
   return (
@@ -21,8 +22,9 @@ function Footer() {
                   className="display_contact"
                   rel="noopener noreferrer"
                 >
-                  <LinkedInIcon></LinkedInIcon>
-                  <p>LinkedIn</p>
+                  <IconButton>
+                    <LinkedInIcon></LinkedInIcon>
+                  </IconButton>
                 </a>
               </p>
               <p className="each_detail">
@@ -32,8 +34,9 @@ function Footer() {
                   className="display_contact"
                   rel="noopener noreferrer"
                 >
-                  <GitHubIcon></GitHubIcon>
-                  <p>Github</p>
+                  <IconButton>
+                    <GitHubIcon></GitHubIcon>
+                  </IconButton>
                 </a>
               </p>
               <p className="each_detail">
@@ -43,17 +46,34 @@ function Footer() {
                   className="display_contact"
                   rel="noopener noreferrer"
                 >
-                  <FacebookIcon></FacebookIcon>
-                  <p>Facebook</p>
+                  <IconButton>
+                    <FacebookIcon></FacebookIcon>
+                  </IconButton>
                 </a>
               </p>
               <li className="display_contact">
-                <PhoneIcon></PhoneIcon>
-                <p>+91-6386947948</p>
+                <a
+                  href="tel:+91-6386947948"
+                  target="_blank"
+                  className="display_contact"
+                  rel="noopener noreferrer"
+                >
+                  <IconButton>
+                    <PhoneIcon></PhoneIcon>
+                  </IconButton>
+                </a>
               </li>
               <li className="display_contact">
-                <EmailIcon></EmailIcon>
-                <p>priyank.ayron@gmail.com</p>
+                <a
+                  href="mailto:priyank.ayron@gmail.com"
+                  target="_blank"
+                  className="display_contact"
+                  rel="noopener noreferrer"
+                >
+                  <IconButton>
+                    <EmailIcon></EmailIcon>
+                  </IconButton>
+                </a>
               </li>
             </div>
           </div>
